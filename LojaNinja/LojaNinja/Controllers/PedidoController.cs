@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using LojaNinja.Models;
 
 namespace LojaNinja.Controllers
 {
@@ -11,6 +12,16 @@ namespace LojaNinja.Controllers
         public ActionResult Cadastro()
         {
             return View();
+        }
+
+        public ActionResult RecebeCadastro(PedidoModel pedido)
+        {
+            return RedirectToAction("Detalhes", pedido);
+        }
+
+        public ActionResult Detalhes(PedidoModel pedido)
+        {
+            return View(pedido);
         }
     }
 }
