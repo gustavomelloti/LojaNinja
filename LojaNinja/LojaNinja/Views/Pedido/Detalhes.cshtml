@@ -14,12 +14,12 @@
 </header>
     
 <form class="dados">
-    <span>@Model.DataDesejoEntrega</span>
+    <span>@Model.DataDesejoEntrega.ToString("dd/MM/yyyy")</span>
     <span>@Model.NomeProduto</span>
     <span id="valor-venda">@Model.ValorVenda</span>
     <span id="cidade">@Model.NomeCliente</span>
     <span>@Model.Cidade</span>
-    <span>@Model.Estado</span>
+    <span>@Model.Estado.ToUpper()</span>
 </form>
 
 <link href="~/Content/css/detalhes.css" rel="stylesheet" />
