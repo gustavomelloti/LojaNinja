@@ -16,6 +16,8 @@ namespace LojaNinja.Controllers
 
         public ActionResult RecebeCadastro(PedidoModel pedido)
         {
+            var a = pedido;
+
             return RedirectToAction("Detalhes", pedido);
         }
 
