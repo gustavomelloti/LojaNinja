@@ -7,7 +7,7 @@
 <h4>Novo Pedido</h4>
 
 <form action="/Pedido/RecebeCadastro" method="post">
-    <hr />
+    <hr>
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
     <div class="form-group">
         @Html.LabelFor(model => model.DataDesejoEntrega, htmlAttributes: new { @class = "control-label col-md-2" })

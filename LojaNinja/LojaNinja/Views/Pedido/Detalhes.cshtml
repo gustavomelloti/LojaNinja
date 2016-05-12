@@ -1,67 +1,25 @@
 ﻿@model LojaNinja.Models.PedidoModel
 
 @{
-    Layout = null;
+   Layout = "~/Shared/_Shared.cshtml"; ;
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Detalhes</title>
-    <style>
-        .cabecalho{
-            padding: 10px;
-            margin: 20px 20px;
-            border: solid black 2px;
-        }
-        .cabecalho > span{
-            margin-left: 70px;
-            margin-right: 40px;
-        }
-
-        .dados > span{
-            margin-left: 90px;
-            margin-right: 40px;
-        }
-
-        #valor-venda{
-            margin-left: 140px;
-        }
-
-        #cidade{
-            margin-right: 0px;
-        }
-        
-    </style>
-</head>
-<body>
-    <header class="cabecalho">
-        <span>@Html.DisplayNameFor(model => model.DataDesejoEntrega)</span>
-        <span>@Html.DisplayNameFor(model => model.NomeProduto)</span>
-        <span>@Html.DisplayNameFor(model => model.ValorVenda)</span>
-        <span>@Html.DisplayNameFor(model => model.NomeCliente)</span>
-        <span>@Html.DisplayNameFor(model => model.Cidade)</span>
-        <span>@Html.DisplayNameFor(model => model.Estado)</span>
-   </header>
+<header class="cabecalho">
+    <span>@Html.DisplayNameFor(model => model.DataDesejoEntrega)</span>
+    <span>@Html.DisplayNameFor(model => model.NomeProduto)</span>
+    <span>@Html.DisplayNameFor(model => model.ValorVenda)</span>
+    <span>@Html.DisplayNameFor(model => model.NomeCliente)</span>
+    <span>@Html.DisplayNameFor(model => model.Cidade)</span>
+    <span>@Html.DisplayNameFor(model => model.Estado)</span>
+</header>
     
-    <form class="dados">
-        <span>@Model.DataDesejoEntrega</span>
-        <span>@Model.NomeProduto</span>
-        <span id="valor-venda">@Model.ValorVenda</span>
-        <span id="cidade">@Model.NomeCliente</span>
-        <span>@Model.Cidade</span>
-        <span>@Model.Estado</span>
-    </form>
+<form class="dados">
+    <span>@Model.DataDesejoEntrega</span>
+    <span>@Model.NomeProduto</span>
+    <span id="valor-venda">@Model.ValorVenda</span>
+    <span id="cidade">@Model.NomeCliente</span>
+    <span>@Model.Cidade</span>
+    <span>@Model.Estado</span>
+</form>
 
-    @*<div class="row dados">
-        <div class="col-xs-6 col-md-2">@Model.DataDesejoEntrega</div>
-        <div class="col-xs-6 col-md-2">@Model.NomeProduto</div>
-        <div class="col-xs-6 col-md-2">@Model.ValorVenda</div>
-        <div class="col-xs-6 col-md-2">@Model.NomeCliente</div>
-        <div class="col-xs-6 col-md-2">@Model.Cidade</div>
-        <div class="col-xs-6 col-md-2">@Model.Estado</div>
-    </div>*@
-</body>
-</html>
+<link href="~/Content/css/detalhes.css" rel="stylesheet" />
