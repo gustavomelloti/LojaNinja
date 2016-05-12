@@ -9,6 +9,11 @@ namespace LojaNinja.Controllers
 {
     public class PedidoController : Controller
     {
+        public ActionResult Index()
+        {
+            return View();
+        }
+
         public ActionResult Cadastro()
         {
             return View();
@@ -16,8 +21,6 @@ namespace LojaNinja.Controllers
 
         public ActionResult RecebeCadastro(PedidoModel pedido)
         {
-            var a = pedido;
-
             return RedirectToAction("Detalhes", pedido);
         }
 
