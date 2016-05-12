@@ -27,6 +27,7 @@ namespace LojaNinja.Models
         public TipoPagamento TipoDePagamento { get; set; }
 
         [Display(Name = "Nome ")]
+        [RegularExpression("^[a-zA-Z ]*$", ErrorMessage="Digite apenas letras.")]
         [Required(ErrorMessage = "Informe seu nome.")]
         public string NomeCliente { get; set; }
 
