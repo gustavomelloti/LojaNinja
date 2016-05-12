@@ -10,34 +10,25 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Sucesso</title>
+    <style>
+        .cabecalho{
+            padding: 10px;
+            margin: 20px 20px;
+        }
+        span{
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    </style>
 </head>
 <body>
-    <p>
-      
-    </p>
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.DataDesejoEntrega)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NomeProduto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ValorVenda)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NomeCliente)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cidade)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Estado)
-            </th>
-            <th></th>
-        </tr>
-    
-    </table>
+    <header class="cabecalho">
+        <span>@Html.DisplayNameFor(model => model.DataDesejoEntrega)</span>
+        <span>@Html.DisplayNameFor(model => model.NomeProduto)</span>
+        <span>@Html.DisplayNameFor(model => model.ValorVenda)</span>
+        <span>@Html.DisplayNameFor(model => model.NomeCliente)</span>
+        <span>@Html.DisplayNameFor(model => model.Cidade)</span>
+        <span>@Html.DisplayNameFor(model => model.Estado)</span>
+   </header>
 </body>
 </html>
